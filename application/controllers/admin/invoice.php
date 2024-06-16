@@ -1,4 +1,3 @@
-<!-- edit by Renaldy -->
 <?php 
 
 class Invoice extends CI_Controller{
