@@ -1,3 +1,4 @@
+<!-- edit by Renaldy -->
 <?php
 
 class Model_Kategori extends CI_Model{
