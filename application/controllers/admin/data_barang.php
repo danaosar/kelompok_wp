@@ -1,3 +1,4 @@
+<!-- edit by Rachman -->
 <?php
 
 class Data_barang extends CI_Controller{

@@ -4,11 +4,11 @@ class Registrasi extends CI_Controller{
 
     public function index()
     {
-        $this->form_validation->set_rules('nama','Nama','required', ['required'   => 'The Name Field is required'
+        $this->form_validation->set_rules('nama','Nama','required', ['required'   => 'Kolom nama wajib diisi'
         ]);
-        $this->form_validation->set_rules('username','Username','required', ['required'  => 'The Username failde is required'
+        $this->form_validation->set_rules('username','Username','required', ['required'  => 'Username wajib diisi'
         ]);
-        $this->form_validation->set_rules('password_1','Password','required|matches[password_2]', ['required'   =>'The Password field is required',
+        $this->form_validation->set_rules('password_1','Password','required|matches[password_2]', ['required'   =>'Password wajib diisi',
                                                                                                    'matches'   =>'The Password does not match'
         ]);
         $this->form_validation->set_rules('password_2','Password','required|matches[password_1]');
