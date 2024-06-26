@@ -1,4 +1,3 @@
-<!-- edit by Emir -->
 <div class="container-fluid">
     <h3><i class="fas fa-edit"></i>Edit Data Barang</h3>
 

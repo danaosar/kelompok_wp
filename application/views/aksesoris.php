@@ -1,4 +1,3 @@
-<!-- edit by Renaldy -->
 <div class="container-fluid">
 
 <div id="carouselExampleIndicators" class="carousel slide"> 

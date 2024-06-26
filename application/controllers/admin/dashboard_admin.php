@@ -1,4 +1,3 @@
-<!-- edit by Rachman -->
 <?php
 
 class Dashboard_admin extends CI_Controller{

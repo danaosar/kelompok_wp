@@ -1,4 +1,3 @@
-<!-- edit by Rachman -->
 <div class="container-fluid">
 
 <div id="carouselExampleIndicators" class="carousel slide"> 
@@ -25,23 +24,73 @@
     </a>
     </div>
 
-    <div class="row text-center mt-4">
-        
-        <?php foreach ($barang as $brg) : ?>
+    <hr class="featurette-divider">
 
-            <div class="card ml-3 mb-3" style="width: 16rem;">
-              <img src="<?php echo base_url().'/uploads/'.$brg->gambar ?>" class="card-img-top" alt="...">
-               <div class="card-body">
-                 <h5 class="card-title mb-1"><?php echo $brg->nama_barang ?></h5>
-                 <small><?php echo $brg->keterangan ?></small><br>
-                 <span class="badge badge-pill badge-success mb-3">Rp. <?php echo number_format($brg->harga, 0,',','.') ?></span>
-                 <?php echo anchor('dashboard/tambah_ke_keranjang/' .$brg->id_barang, '<div class="btn btn-sm btn-primary">Tambah Ke Keranjang</div>') ?>
-                 <?php echo anchor('dashboard/detail/' .$brg->id_barang, '<div class="btn btn-sm btn-success">Detail</div>') ?>
-
-                 
-            </div>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">About Us </h2>
+            <p class="lead">Man's Speedshop merupakan tempat untuk para pencinta motor yang ingin memodifikasi atau membeli sparepart sepeda motor yang bisa disesuaikan oleh mereka.<p>
+            <p class="lead">Layanan Kami :</p>
+            <p class="lead">- Melakukan Perawatan</p>
+            <p class="lead">- Pemasangan Part Motor</p>
+            <p class="lead">- Pembelian Part Motor</p>
           </div>
-            
-        <?php endforeach; ?>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" img src="<?php echo base_url('assets/img/speedshop.png') ?>" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Brand Collaburations</h2>
+            <p class="lead">kami berkerja sama dengan beberapa brand penyedia part-part motor ternama.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" img src="<?php echo base_url('assets/img/stiker.png') ?>" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Referensi Modifikasi Honda Vario 125 <span class="text-muted"></span></h2>
+            <p class="lead">Ini adalah contoh modifikasi Honda Vario 125 menggunakan Shockbreaker Tabung merk Scarlet Racing dengan tipe Adjuster 9002R. </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" img src="<?php echo base_url('assets/img/semir.jpg') ?>" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Referensi Modifikasi Yamaha Nmax 155 <span class="text-muted"></span></h2>
+            <p class="lead">Ini adalah contoh modifikasi Yamaha Nmax 155 yang menggunakan Velg V-Rossi dengan tipe Starmax.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" img src="<?php echo base_url('assets/img/nmax.jpg') ?>" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
 </div>
+
+<!-- Footer Bottom Start -->
+<div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design by <a href="" target="_blank">Kelompok 8</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+    
 </div>

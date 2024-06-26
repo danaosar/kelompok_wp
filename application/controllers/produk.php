@@ -1,13 +1,13 @@
 <?php
 
-class Dashboard extends CI_Controller{
+class Produk extends CI_Controller{
 
     public function index()
     {
         $data['barang'] = $this->model_barang->tampil_data()->result();
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
-        $this->load->view('dashboard', $data);
+        $this->load->view('produk', $data);
         $this->load->view('templates/footer');
     }
 
@@ -25,7 +25,7 @@ class Dashboard extends CI_Controller{
     );
     
     $this->cart->insert($data);
-    redirect('dashboard');  
+    redirect('produk');  
     }
 
     public function detail_keranjang()

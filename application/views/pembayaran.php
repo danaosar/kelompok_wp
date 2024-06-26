@@ -1,4 +1,3 @@
-<!-- edit by Emir -->
 <div class="container-fluid">
    <div class="row">
     <div class="col-md-2"></div>
@@ -22,45 +21,61 @@
 
             <div class="form-group">
                 <label>Nama Lengkap</label>
-                <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control"> 
+                <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control" required>
+                <div class="invalid-feedback">
+                Silahkan Masukkan Nama Lengkap.
+              </div> 
             </div>
 
             <div class="form-group">
                 <label>Alamat Lengkap</label>
-                <input type="text" name="alamat" placeholder="Alamat Lengkap Anda" class="form-control"> 
+                <input type="text" name="alamat" placeholder="Alamat Lengkap Anda" class="form-control" required>
+                <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div> 
             </div>
 
             <div class="form-group">
                 <label>No. Telepon</label>
-                <input type="text" name="no_telepon" placeholder="No Telepon Anda" class="form-control"> 
+                <input type="text" name="no_telepon" placeholder="No Telepon Anda" class="form-control" required>
+                <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div> 
             </div>
 
             <div class="form-group">
                 <label>Jasa Pengiriman</label>
-                <select class="form-control">
+                <select class="form-control" required>
                     <option>JNE</option>
                     <option>TIKI</option>
                     <option>Gosend</option>
                     <option>SPX</option>
                 </select>
+                <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
             </div>
 
             <div class="form-group">
                 <label>Pilih Bank</label>
-                <select class="form-control">
-                    <option>BCA - XXXXXX</option>
-                    <option>BNI - XXXXXX</option>
-                    <option>BRI - XXXXXX</option>
-                    <option>MANDIRI - XXXXXX</option>
+                <select class="form-control" required>
+                    <option>BCA - 5612707 </option>
+                    <option>BNI - 6480939 </option>
+                    <option>BRI - 3832482 </option>
+                    <option>MANDIRI - 2417603 </option>
                 </select>
+                <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
             </div>
 
-            <button type="submit" class="btn btn-sm btn-primary mb-3">Pesan</button>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Pesan</button>
 
         </form>
 
         <?php
-        } else
+        } 
+        else
         {
             echo "<h4>Keranjang Belanja Anda Masih Kosong";
         } 
@@ -68,7 +83,27 @@
 
     </div><br><br>
 
-    
+    <script>
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
     <div class="col-md-2"></div>
    </div>
 </div

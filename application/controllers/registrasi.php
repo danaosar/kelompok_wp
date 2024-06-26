@@ -1,4 +1,3 @@
-<!-- edit by Nanda -->
 <?php
 
 class Registrasi extends CI_Controller{

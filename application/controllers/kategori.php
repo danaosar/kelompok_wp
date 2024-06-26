@@ -1,4 +1,3 @@
-<!-- edit by Renaldy -->
 <?php
 
 class Kategori extends CI_Controller{

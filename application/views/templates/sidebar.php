@@ -1,4 +1,3 @@
-<!-- edit by Rachman -->
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -24,6 +23,13 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="<?php echo base_url('index.php/produk') ?>">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Produk</span></a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -77,7 +83,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-gradient-light topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
